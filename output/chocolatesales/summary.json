@@ -1,0 +1,101 @@
+{
+  "dataset_name": "chocolatesales",
+  "generated_at": "2026-02-04T18:58:46",
+  "overview": {
+    "n_rows": 3282,
+    "n_cols": 6,
+    "columns": [
+      "Sales Person",
+      "Country",
+      "Product",
+      "Date",
+      "Amount",
+      "Boxes Shipped"
+    ],
+    "roles": {
+      "Sales Person": "categorical",
+      "Country": "categorical",
+      "Product": "categorical",
+      "Date": "categorical",
+      "Amount": "text",
+      "Boxes Shipped": "numeric"
+    }
+  },
+  "quality": {
+    "duplicate_rows": 0,
+    "constant_cols": [],
+    "high_missing_threshold": 0.4,
+    "high_missing_cols": [],
+    "id_like_cols": [],
+    "missing_pct_top": {
+      "Sales Person": 0.0,
+      "Country": 0.0,
+      "Product": 0.0,
+      "Date": 0.0,
+      "Amount": 0.0,
+      "Boxes Shipped": 0.0
+    }
+  },
+  "categorical": {
+    "selected_col": "Country",
+    "frequency_top": [
+      {
+        "value": "Australia",
+        "count": 615,
+        "percent": 18.74
+      },
+      {
+        "value": "India",
+        "count": 552,
+        "percent": 16.82
+      },
+      {
+        "value": "USA",
+        "count": 537,
+        "percent": 16.36
+      },
+      {
+        "value": "UK",
+        "count": 534,
+        "percent": 16.27
+      },
+      {
+        "value": "Canada",
+        "count": 525,
+        "percent": 16.0
+      },
+      {
+        "value": "New Zealand",
+        "count": 519,
+        "percent": 15.81
+      }
+    ]
+  },
+  "numeric": {
+    "selected_cols": [
+      "Boxes Shipped"
+    ],
+    "profiles": [
+      {
+        "col": "Boxes Shipped",
+        "count_nonnull": 3282,
+        "min": 1.0,
+        "max": 778.0,
+        "mean": 164.66697135892747,
+        "median": 137.0,
+        "mode": 24.0,
+        "std": 124.02473551561458,
+        "q1": 71.0,
+        "q3": 232.0,
+        "iqr": 161.0,
+        "outliers_1p5iqr": 78,
+        "outlier_bounds": [
+          -170.5,
+          473.5
+        ]
+      }
+    ]
+  },
+  "correlations": [],
+  "schema": null
+}

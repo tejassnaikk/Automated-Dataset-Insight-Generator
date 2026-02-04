@@ -1,0 +1,197 @@
+{
+  "dataset_name": "data2",
+  "generated_at": "2026-02-04T18:58:43",
+  "overview": {
+    "n_rows": 4424,
+    "n_cols": 37,
+    "columns": [
+      "Marital status",
+      "Application mode",
+      "Application order",
+      "Course",
+      "Daytime/evening attendance",
+      "Previous qualification",
+      "Previous qualification (grade)",
+      "Nacionality",
+      "Mother's qualification",
+      "Father's qualification",
+      "Mother's occupation",
+      "Father's occupation",
+      "Admission grade",
+      "Displaced",
+      "Educational special needs",
+      "Debtor",
+      "Tuition fees up to date",
+      "Gender",
+      "Scholarship holder",
+      "Age at enrollment",
+      "International",
+      "Curricular units 1st sem (credited)",
+      "Curricular units 1st sem (enrolled)",
+      "Curricular units 1st sem (evaluations)",
+      "Curricular units 1st sem (approved)",
+      "Curricular units 1st sem (grade)",
+      "Curricular units 1st sem (without evaluations)",
+      "Curricular units 2nd sem (credited)",
+      "Curricular units 2nd sem (enrolled)",
+      "Curricular units 2nd sem (evaluations)",
+      "Curricular units 2nd sem (approved)",
+      "Curricular units 2nd sem (grade)",
+      "Curricular units 2nd sem (without evaluations)",
+      "Unemployment rate",
+      "Inflation rate",
+      "GDP",
+      "Target"
+    ],
+    "roles": {
+      "Marital status": "numeric",
+      "Application mode": "numeric",
+      "Application order": "numeric",
+      "Course": "numeric",
+      "Daytime/evening attendance": "numeric",
+      "Previous qualification": "numeric",
+      "Previous qualification (grade)": "numeric",
+      "Nacionality": "numeric",
+      "Mother's qualification": "numeric",
+      "Father's qualification": "numeric",
+      "Mother's occupation": "numeric",
+      "Father's occupation": "numeric",
+      "Admission grade": "numeric",
+      "Displaced": "numeric",
+      "Educational special needs": "numeric",
+      "Debtor": "numeric",
+      "Tuition fees up to date": "numeric",
+      "Gender": "numeric",
+      "Scholarship holder": "numeric",
+      "Age at enrollment": "numeric",
+      "International": "numeric",
+      "Curricular units 1st sem (credited)": "numeric",
+      "Curricular units 1st sem (enrolled)": "numeric",
+      "Curricular units 1st sem (evaluations)": "numeric",
+      "Curricular units 1st sem (approved)": "numeric",
+      "Curricular units 1st sem (grade)": "numeric",
+      "Curricular units 1st sem (without evaluations)": "numeric",
+      "Curricular units 2nd sem (credited)": "numeric",
+      "Curricular units 2nd sem (enrolled)": "numeric",
+      "Curricular units 2nd sem (evaluations)": "numeric",
+      "Curricular units 2nd sem (approved)": "numeric",
+      "Curricular units 2nd sem (grade)": "numeric",
+      "Curricular units 2nd sem (without evaluations)": "numeric",
+      "Unemployment rate": "numeric",
+      "Inflation rate": "numeric",
+      "GDP": "numeric",
+      "Target": "categorical"
+    }
+  },
+  "quality": {
+    "duplicate_rows": 0,
+    "constant_cols": [],
+    "high_missing_threshold": 0.4,
+    "high_missing_cols": [],
+    "id_like_cols": [],
+    "missing_pct_top": {
+      "Marital status": 0.0,
+      "Application mode": 0.0,
+      "Application order": 0.0,
+      "Course": 0.0,
+      "Daytime/evening attendance": 0.0,
+      "Previous qualification": 0.0,
+      "Previous qualification (grade)": 0.0,
+      "Nacionality": 0.0,
+      "Mother's qualification": 0.0,
+      "Father's qualification": 0.0
+    }
+  },
+  "categorical": {
+    "selected_col": "Target",
+    "frequency_top": [
+      {
+        "value": "Graduate",
+        "count": 2209,
+        "percent": 49.93
+      },
+      {
+        "value": "Dropout",
+        "count": 1421,
+        "percent": 32.12
+      },
+      {
+        "value": "Enrolled",
+        "count": 794,
+        "percent": 17.95
+      }
+    ]
+  },
+  "numeric": {
+    "selected_cols": [
+      "Marital status",
+      "Application mode"
+    ],
+    "profiles": [
+      {
+        "col": "Marital status",
+        "count_nonnull": 4424,
+        "min": 1.0,
+        "max": 6.0,
+        "mean": 1.1785714285714286,
+        "median": 1.0,
+        "mode": 1.0,
+        "std": 0.6057469461306886,
+        "q1": 1.0,
+        "q3": 1.0,
+        "iqr": 0.0,
+        "outliers_1p5iqr": 505,
+        "outlier_bounds": [
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "col": "Application mode",
+        "count_nonnull": 4424,
+        "min": 1.0,
+        "max": 57.0,
+        "mean": 18.669077757685354,
+        "median": 17.0,
+        "mode": 1.0,
+        "std": 17.48468229100503,
+        "q1": 1.0,
+        "q3": 39.0,
+        "iqr": 38.0,
+        "outliers_1p5iqr": 0,
+        "outlier_bounds": [
+          -56.0,
+          96.0
+        ]
+      }
+    ]
+  },
+  "correlations": [
+    {
+      "a": "Curricular units 1st sem (credited)",
+      "b": "Curricular units 2nd sem (credited)",
+      "corr": 0.9448110366582713
+    },
+    {
+      "a": "Curricular units 1st sem (enrolled)",
+      "b": "Curricular units 2nd sem (enrolled)",
+      "corr": 0.942626693015919
+    },
+    {
+      "a": "Mother's occupation",
+      "b": "Father's occupation",
+      "corr": 0.910472107644332
+    },
+    {
+      "a": "Curricular units 1st sem (approved)",
+      "b": "Curricular units 2nd sem (approved)",
+      "corr": 0.9040021013038965
+    },
+    {
+      "a": "Curricular units 1st sem (grade)",
+      "b": "Curricular units 2nd sem (grade)",
+      "corr": 0.8371697405958258
+    }
+  ],
+  "schema": null
+}
